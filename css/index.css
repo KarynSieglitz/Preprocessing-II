@@ -174,21 +174,29 @@ a {
   color: #000;
 }
 .navCont {
-  display: flex;
-  justify-content: space-between;
   padding: 25px 0px 25px 0px;
   width: 100%;
+  border-bottom: 2px dashed #c0c0c0;
+}
+.navCont .test {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  align-items: center;
+  margin: auto;
 }
 .navCont nav {
   display: flex;
   justify-content: space-evenly;
-  width: 45%;
-  align-items: center;
 }
 @media (max-width: 500px) {
   .navCont nav {
     background-color: thistle;
   }
+}
+.navCont nav a {
+  padding-right: 25px;
+  font-size: 1.6rem;
 }
 .navCont nav a:hover {
   color: teal;
@@ -220,14 +228,6 @@ button:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
-}
-.home header hr {
-  border-top: 2px dashed #c0c0c0;
-  width: 100vw !important;
-}
-.home header .navBorder {
-  border-bottom: 2px dashed #c0c0c0;
-  width: 100vw;
 }
 .home header .hero h1 {
   font-size: 3.2rem;

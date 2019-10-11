@@ -1,24 +1,31 @@
 // Navigation Styles here
 
 .navCont {
-    display: flex;
-    justify-content: space-between;
+    
     padding: 25px 0px 25px 0px;
     width: 100%;
+    border-bottom: 2px dashed #c0c0c0;
+
+    .test {
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+        align-items: center;
+        margin: auto;
+    }
 
     nav {
         display: flex;
         justify-content: space-evenly;
-        width: 45%;
-        align-items: center;
 
         @media @mobile {
             background-color: thistle;
         }
 
         a {
-          
-            &:hover {
+            padding-right: 25px; 
+            font-size: 1.6rem;
+             &:hover {
                 color: teal;
             }
 
